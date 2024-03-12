@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Elemanları</title>
+  </head>
+  <body>
+    <form>
+      <!-- ! Ana Kullanıcı Bilgileri Start  -->
+      <label for="isim">Ad:</label>
+      <input type="text" id="isim" /><br />
+      <label for="soyisim">Soyad:</label>
+      <input type="text" id="soyisim" /><br />
+      <label for="mail">E-mail:</label>
+      <input type="email" id="mail" /><br />
+      <label for="sifre">Şifre:</label>
+      <input type="password" id="sifre" /><br />
+      <label for="kadin">Kadın</label>
+      <input type="radio" id="kadin" name="cinsiyet" />
+      <label for="erkek">Erkek</label>
+      <input type="radio" id="erkek" name="cinsiyet" />
+      <!-- ! Ana Kullanıcı Bilgileri End  -->
+      <!--  ? Kullanıcı Favori Meyveleri Listesi Start -->
+      <select name="liste" id="liste">
+        <option value="Elma">Elma</option>
+        <option value="Armut">Armut</option>
+        <option value="Muz" selected>Muz</option>
+        <option value="Karpuz">Karpuz</option>
+        <option value="Çilek">Çilek</option>
+        <option value="Erik">Erik</option>
+      </select><br />
+      <!--  ? Kullanıcı Favori Meyveleri Listesi End -->
+      <!-- * Feedback Alanı Buraya Açılmalı Start  -->
+      <label for="text">Mesajınız:</label><br />
+      <textarea name="text" id="text" cols="30" rows="10"></textarea><br />
+      <!-- * Feedback Alanı Buraya Açılmalı End  -->
+      <!-- ? Buraya Submit ve Reset Buttonları Gelmeli Start -->
+      <input type="submit" value="Gönder" />
+      <input type="reset" value="Resetle" />
+      <!-- ? Buraya Submit ve Reset Buttonları Gelmeli End -->
+    </form>
+  </body>
+</html>
